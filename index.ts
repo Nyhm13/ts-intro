@@ -159,3 +159,69 @@ interface ApiResponse<T> {
   status: number;
   message: string;
 }
+
+interface Rating {
+  source: string;
+  value: string;
+}
+
+interface ApiResponse2<A> {
+  title: string;
+  years: string | number;
+  rated: string;
+  runtime: string;
+  genre: string;
+  director: string;
+  actors: string;
+  plot: string;
+  language: string;
+  country: string;
+  awards: string;
+  poster: string;
+  ratings: A;
+  metascore: string | number;
+  imdBrating: string | number;
+  imdbVotes: string | number;
+  imdbID: string;
+  type: string;
+  DVD: string;
+  boxOffice: string;
+  production: string;
+  website: string;
+  response: boolean;
+}
+
+const response: ApiResponse2<Rating[]> = {
+  title: "matrix",
+  years: 1999,
+  rated: "pg-13",
+  runtime: "120min",
+  genre: "action",
+  director: "david",
+  actors: "keanu",
+  ratings: [
+    {
+      source: "Rotten Tomatoes",
+      value: "85%",
+    },
+    {
+      source: "Metacritic",
+      value: "73/100",
+    },
+  ],
+  metascore: "85",
+  imdBrating: "8.7",
+  plot: "un film di fantascienza",
+  language: "inglese",
+  country: "USA",
+  awards: "oscar",
+  poster: "https://example.com/poster.jpg",
+  type: "movie",
+  DVD: "201312314",
+  production: "warner ",
+  boxOffice: "cadomalato",
+  website: "https://example.com",
+  response: true,
+  imdbVotes: 10000,
+  imdbID: "tt123123",
+};

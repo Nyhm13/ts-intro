@@ -71,3 +71,37 @@ var macchina = {
     releaseYear: 2000,
 };
 console.log(macchina);
+var response = {
+    title: "matrix",
+    years: 1999,
+    rated: "pg-13",
+    runtime: "120min",
+    genre: "action",
+    director: "david",
+    actors: "keanu",
+    ratings: [
+        {
+            source: "Rotten Tomatoes",
+            value: "85%",
+        },
+        {
+            source: "Metacritic",
+            value: "73/100",
+        },
+    ],
+    metascore: "85",
+    imdBrating: "8.7",
+    plot: "un film di fantascienza",
+    language: "inglese",
+    country: "USA",
+    awards: "oscar",
+    poster: "https://example.com/poster.jpg",
+    type: "movie",
+    DVD: "201312314",
+    production: "warner ",
+    boxOffice: "cadomalato",
+    website: "https://example.com",
+    response: true,
+    imdbVotes: 10000,
+    imdbID: "tt123123",
+};
